@@ -13,6 +13,17 @@
 </div>
 
 <div align="center">
+    <h2>• new in this fork •</h2>
+    <h3></h3>
+</div>
+
+> [!NOTE]
+> Extra features on top of upstream:
+> - **RU keyboard layout**: `us,ru` with `Alt+Shift` toggle (`dots/.config/hypr/custom/general.lua`)
+> - **NVIDIA GPU in the top bar**: load circle next to CPU/RAM + popup with load, VRAM used/total and temperature, polled via `nvidia-smi`. Hides itself when no NVIDIA GPU is present
+> - **Monitor preset**: `DP-1` at `2560x1440@144` (desktop-specific — Hyprland safely ignores it on machines without this output)
+
+<div align="center">
     <h2>• overview •</h2>
     <h3></h3>
 </div>

@@ -37,6 +37,14 @@ MouseArea {
             warningThreshold: Config.options.bar.resources.cpuWarningThreshold
         }
 
+        Resource {
+            Layout.alignment: Qt.AlignHCenter
+            iconName: "developer_board"
+            percentage: ResourceUsage.gpuUsage
+            shown: ResourceUsage.gpuMemoryTotal > 1 || root.alwaysShowAllResources
+            warningThreshold: Config.options.bar.resources.gpuWarningThreshold
+        }
+
     }
 
     Bar.ResourcesPopup {

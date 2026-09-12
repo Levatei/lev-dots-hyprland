@@ -90,5 +90,39 @@ StyledPopup {
                 }
             }
         }
+
+        Column {
+            visible: ResourceUsage.gpuMemoryTotal > 1
+            anchors.top: parent.top
+            spacing: 8
+
+            StyledPopupHeaderRow {
+                icon: "developer_board"
+                label: "GPU"
+            }
+            Column {
+                spacing: 4
+                StyledPopupValueRow {
+                    icon: "bolt"
+                    label: Translation.tr("Load:")
+                    value: `${Math.round(ResourceUsage.gpuUsage * 100)}%`
+                }
+                StyledPopupValueRow {
+                    icon: "clock_loader_60"
+                    label: Translation.tr("Used:")
+                    value: `${(ResourceUsage.gpuMemoryUsed / 1024).toFixed(1)} GB`
+                }
+                StyledPopupValueRow {
+                    icon: "empty_dashboard"
+                    label: Translation.tr("Total:")
+                    value: `${(ResourceUsage.gpuMemoryTotal / 1024).toFixed(1)} GB`
+                }
+                StyledPopupValueRow {
+                    icon: "thermometer"
+                    label: Translation.tr("Temp:")
+                    value: `${Math.round(ResourceUsage.gpuTemp)}°C`
+                }
+            }
+        }
     }
 }
