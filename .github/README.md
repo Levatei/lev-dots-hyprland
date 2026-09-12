@@ -24,6 +24,14 @@
 > - **Monitor preset**: `DP-1` at `2560x1440@144` (desktop-specific — Hyprland safely ignores it on machines without this output)
 
 <div align="center">
+    <h2>• приложения из окружения •</h2>
+    <h3></h3>
+</div>
+
+> Состав окружения: какие приложения используются и что они делают —
+> [на русском](/APPS.md) | [in English](/APPS.en.md)
+
+<div align="center">
     <h2>• overview •</h2>
     <h3></h3>
 </div>
